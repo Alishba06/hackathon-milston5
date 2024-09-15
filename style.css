@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container, .resume-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+form fieldset {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+
+form legend {
+    font-weight: bold;
+    color: #007BFF;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #007BFF;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button, a {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #28a745; /* Green background for buttons */
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+button:disabled, a:disabled {
+    background-color: #6c757d; /* Disabled color */
+    cursor: not-allowed;
+}
+
+button {
+    background-color: #28a745; /* Green background for buttons */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+/* Specific styling for shareable link button */
+#link {
+    background-color: #28a745; /* Same green background as other buttons */
+}
+
+#link:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Hide buttons when printing */
+@media print {
+    #editResumeButton, #saveChangesButton, #download, #link {
+        display: none;
+    }
+}
